@@ -1,0 +1,92 @@
+@use '../Styles/variables';
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 128px;
+
+    @media (max-width: 414.40px) {
+        flex-direction: column;
+        height: 200px;
+        padding: 40px 20px;
+    }
+
+    .title {
+        width: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 60%;
+        }
+
+        @media (max-width: 414.40px) {
+            width: 100%;
+            flex-direction: row;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: bold;
+            color: variables.$text-color;
+            margin: 0;
+            font-family: variables.$PoynterOSDisp;
+            line-height: 25px;
+            cursor: pointer;
+        }
+
+        .links {
+            width: 53%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 5px;
+
+            @media (max-width: 768px) {
+                width: 85%;
+            }
+
+            @media (max-width: 414.40px) {
+                width: 50%;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            a {
+                color: variables.$text-color;
+                font-size: 16px;
+                text-decoration: none;
+                font-weight: light;
+                font-family: variables.$KOMET;
+
+                @media (max-width: 768px) {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    button {
+        width: 160px;
+        height: 48px;
+        background-color: variables.$background-color;
+        font-size: 18px;
+        font-weight: bold;
+        color: variables.$text-color;
+        border-radius: 100px;
+        border: none;
+        font-family: variables.$KOMET;
+
+        @media (max-width: 414.40px) {
+            width: 100%;
+            padding: 5px 0;
+            margin-top: 20px;
+        }
+    }
+}

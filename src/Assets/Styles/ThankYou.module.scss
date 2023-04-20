@@ -1,0 +1,70 @@
+@use '../Styles/variables';
+
+.container {
+    background-image: url('../Images/bg3.png');
+    background-color: variables.$text-color;
+    background-size: cover;
+
+    @media (max-width: 414.40px) {
+        background-size: auto;
+    }
+
+    .thankYou {
+        width: 85%;
+        align-items: center;
+        
+        @media (max-width: 768px) {
+            width: 100%;
+            flex-direction: column;
+        }
+        
+        @media (max-width: 414.40px) {
+            width: 80%;
+            align-items: flex-start;
+        }
+
+        p {            
+            font-size: 44px;
+            font-weight: bold;
+            line-height: 60px;
+            top: 50px;
+            width: 40%;
+
+            @media (max-width: 768px) {
+                width: 70%;
+                font-size: 35px;
+                margin-bottom: 5%;
+            }
+
+            @media (max-width: 414.40px) {
+                font-size: 22px;
+                line-height: normal;
+                top: 50px;
+
+            }
+
+            span {
+                color: transparent;
+                font-size: 44px;
+
+                @media (max-width: 768px) {
+                    font-size: 35px;
+                    color: #fff;
+                }
+
+                @media (max-width: 414.40px) {
+                    font-size: 22px;
+                }
+
+                span {
+                    color: transparent;
+
+                    @media (max-width: 414.40px) {
+                        font-size: 22px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,104 @@
+@use '../Styles/variables';
+
+.container {
+    width: 30%;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+        width: 30%;
+    }
+
+    @media (max-width: 414.40px) {
+        width: 47%;
+    }
+
+    .newPost {
+        width: 90%;
+        min-height: 60vh;
+        align-items: flex-start;
+        background-color: variables.$text-color;
+
+        @media (max-width: 768px) {
+            width: 100%;
+            min-height: 50vh;
+        }
+
+        @media (max-width: 414.40px) {
+            min-height: 40vh;
+            align-items: center;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        button {
+            background-color: #fff;
+            color: variables.$text-color;
+            width: 65%;
+            padding: 10px;
+            font-size: 14px;
+            font-family: variables.$KOMET;
+            margin-left: 12%;
+            top: -32px;
+
+            @media (max-width: 768px) {
+                font-size: 12px;
+                top: -32px;
+            }
+
+            @media (max-width: 414.40px) {
+                padding: 5px;
+                margin-left: 0;
+                top: -20px;
+            }
+
+            span {
+                @media (max-width: 768px) {
+                    color: transparent;
+                }
+            }
+        }
+
+        p {
+            width: 70%;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 30px;
+            margin-left: 12%;
+            margin-bottom: 0;
+            bottom: 19px;
+
+            @media (max-width: 768px) {
+                font-size: 16px;
+                line-height: 22px;
+                bottom: 25px;
+            }
+
+            @media (max-width: 414.40px) {
+                font-size: 16px;
+                margin-left: 5px;
+                bottom: 15px;
+            }
+        }
+
+        a {
+            font-size: 14px;
+            font-weight: light;
+            margin-left: 12%;
+            bottom: 20px;
+
+            @media (max-width: 768px) {
+                font-size: 14px;
+                bottom: 25px;
+            }
+
+            @media (max-width: 414.40px) {
+                font-size: 14px;
+                margin-right: 42px;
+                text-align: start;
+                bottom: 15px;
+            }
+        }
+    }
+}

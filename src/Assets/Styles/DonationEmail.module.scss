@@ -1,0 +1,62 @@
+@use '../Styles/variables';
+
+.container {
+    background-color: variables.$text-color;
+    min-height: 50vh;
+
+    .donation {
+        width: 85%;
+
+        @media (max-width: 786px) {
+            width: 90%
+        }
+
+        @media (max-width: 414.40px) {
+            flex-direction: column;
+            padding: 10% 0;
+        }
+
+        span {
+            width: 30%;
+            font-size: 44px;
+            line-height: 45px;
+            font-family: variables.$FLOOD-STD-WEIGHT-REGULAR;
+            margin-right: 15%;
+
+            
+        @media (max-width: 786px) {
+            width: 40%;
+            margin: 0;
+            font-size: 32px;
+        }
+
+        @media (max-width: 414.40px) {
+            width: 80%;
+        }
+
+        }
+    
+        p {
+            width: 40%;
+            font-size: 20px;
+            font-weight: light;
+
+            @media (max-width: 786px) {
+                width: 45%;
+                margin: 0;
+                font-size: 16px;
+            }
+
+            @media (max-width: 414.40px) {
+                width: 80%;
+                margin-bottom: 15%;
+            }
+
+            a {
+                color: variables.$background-color;
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,148 @@
+@use '../Styles/variables';
+
+.container {
+    background-color: variables.$text-color;
+    padding: 50px 0;
+    width: 100%;
+    margin-left: 12%;
+    margin-right: 25%;
+
+    .year {
+        width: 80%;
+        padding: 10px;
+        background-color: #fff;
+        right: 25%;
+        top: 20px;
+        font-size: 14px;
+        z-index: 1000;
+
+        @media (max-width: 786px) {
+            width: 15%;
+            right: 5%;
+            padding: 7px;
+        }
+
+        @media (max-width: 414.40px) {
+            left: 0;
+            bottom: 4%;
+            width: 30%;
+        }
+    }
+
+    .history {
+        width: 290%;
+        align-items: flex-start;
+        background-color: #fff;
+        border: 1px solid #888;
+        margin-left: 50%;
+        position: relative;
+        // left: 50%;
+        // margin-left: 30px;
+
+        @media (max-width: 768px) {
+            width: 40%;
+        }
+
+        @media (max-width: 414.40px) {
+            align-items: center;
+            width: 70%;
+        }
+
+        .arrow {
+            width: 15%;
+            left: 50%;
+            bottom: 120px;
+        }
+
+        .details {
+            min-height: 40vh;
+
+            @media (max-width: 414.40px) {
+                align-items: center;
+            }
+
+            p {
+                width: 90%;
+                font-size: 25px;
+                font-weight: bold;
+                color: variables.$text-color;
+                left: 10%;
+                top: 20px;
+                line-height: 30px;
+
+                @media (max-width: 768px) {
+                    font-size: 22px;
+                }
+
+                @media (max-width: 414.40px) {
+                    left: 0;
+                    top: -20px;
+                    text-align: center;
+                }
+
+                span {
+                    font-size: 25px;
+                    font-weight: bold;
+                    color: variables.$text-color;
+                    margin-right: 20px;
+                    left: 0%;
+
+                    @media (max-width: 768px) {
+                        color: transparent;
+                    }
+
+                    @media (max-width: 414.40px) {
+                        color: variables.$text-color;
+                        font-size: 22px;
+                        position: relative;
+                        top: 1%
+                    }
+                }
+            }
+
+            .lorem {
+                width: 85%;
+                font-size: 18px;
+                font-weight: light;
+                font-family: variables.$KOMET;
+                left: 10%;
+                margin-top: 5%;
+                color: variables.$text-color;
+
+                @media (max-width: 768px) {
+                    font-size: 16px;
+                    margin-top: 0;
+                }
+
+                @media (max-width: 414.40px) {
+                    font-size: 16px;
+                    position: relative;
+                    left: 0;
+                    top: -20px;
+                    text-align: center;
+                }
+            }
+
+            .readMore {
+                width: 30%;
+                padding: 7px;
+                border-radius: 100px;
+                font-size: 18px;
+                font-weight: bold;
+                color: variables.$text-color;
+                background-color: variables.$background-color;
+                left: 10%;
+                margin-top: 7%;
+
+                @media (max-width: 768px) {
+                    width: 40%;
+                    font-size: 14px;
+                }
+
+                @media (max-width: 414.40px) {
+                    left: 0;
+                }
+            }
+        }
+    }
+}

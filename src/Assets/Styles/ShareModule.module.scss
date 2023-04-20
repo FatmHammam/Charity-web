@@ -1,0 +1,195 @@
+@use '../Styles/variables';
+
+.thankYou {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+
+    .share {
+        width: 80%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        margin-left: 30%;
+
+        @media (max-width: 768px) {
+            width: 100%;
+            min-height: 40vh;
+            margin-left: 0;
+        }
+
+        @media (max-width: 414.40px) {
+           width: 250%;
+        }
+
+        button {
+            background-color: variables.$text-color;
+            color: #fff;
+            position: relative;
+            top: -20px;
+            left: 7%;
+            width: 160px;
+            height: 40px;
+            border: none;
+        }
+
+        .extract {
+            width: 88%;
+            margin: 0 auto; 
+            margin-top: 3%;   
+            display: flex;
+            justify-content: space-around;
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+                align-items: flex-start;
+                min-height: 30vh;
+            }
+
+            p {
+                width: 48%;
+                color: variables.$text-color;
+                font-weight: bold;
+                font-size: 25px;
+                position: relative;
+                top: 0%;
+                margin-top: 3%;
+                line-height: normal;
+
+
+                @media (max-width: 768px) {
+                    position: relative;
+                    margin-top: 0px;
+                   width: 100%;
+                    font-size: 22px;
+                }
+
+                @media (max-width: 414.40px) {
+                    width: 248px;
+                    height: 115px;
+                    font-size: 18px;
+                }
+
+                span {
+                    // color: variables.$text-color;
+                    color: transparent;
+                    font-size: 26px;
+
+                    @media (max-width: 768px) {
+                        font-size: 28px;
+                        color: variables.$text-color;
+                        font-size: 22px;
+                    }
+
+                    @media (max-width: 414.40px) {
+                        width: 248px;
+                        height: 115px;
+                        font-size: 18px;
+                    }
+
+                    span {
+                        @media (max-width: 414.40px) {
+                            color: transparent;
+                        }
+                    }
+                }
+            }
+
+            .brands {
+                width: 128px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                margin-bottom: 6%;
+
+                @media (max-width: 768px) {
+                    // width: 512px;
+                    width: 100%;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin-bottom: 20px;
+                }
+
+                @media (max-width: 414.40px) {
+                    width: 248px;
+                    height: 115px;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                }
+
+                .brand {
+                    width: 100%;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    margin-bottom: 20px;
+                    background-color: variables.$background-color;
+                    border-radius: 100px;
+
+                    @media (max-width: 768px) {
+                        width: 116px;
+                        height: 32px;
+                    }
+
+                    p {
+                        width: 46px;
+                        font-size: 11px;
+                        height: 15px;
+                        margin: 0;
+                        margin-right: 5px;
+                        position: relative;
+                        top: 0;
+                        color: variables.$text-color;
+                    }
+
+                    img {
+                        height: 13px;
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+
+        .responsivQoute {
+
+            @media (max-width: 768px) {
+                // width: 512px;
+                position: relative;
+                top: -50%;
+            }
+
+            @media (max-width: 414.40px) {
+                width: 248px;
+                position: relative;
+                top: -35%;
+                text-align: center;
+            }
+        }
+    }
+
+    .shareResponsive {
+        // width: 80%;
+        // background-color: red;
+
+        @media (max-width: 414.40px) {
+            align-items: center;
+        }
+    }
+}
+
+.ThankYouResponsive {
+    background-color: variables.$text-color;
+
+    @media (max-width: 414.40px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

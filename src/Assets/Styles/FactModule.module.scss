@@ -1,0 +1,75 @@
+@use '../Styles/variables';
+
+.container {
+    background-color: variables.$text-color;
+
+    .fact {
+        min-height: 30vh;
+        background-color: #fff;
+
+        @media (max-width: 768px) {
+            min-height: 10vh;
+        }
+
+        @media (max-width: 414.40px) {
+            width: 100%;
+        }
+
+        .description {
+            width: 70%;
+
+            h4 {
+                margin-bottom: 5%;
+                font-size: 44px;
+                font-weight: bold;
+                color: variables.$text-color;
+
+                @media (max-width: 768px) {
+                    font-size: 30px;
+                    margin-top: 5%;
+                }
+
+                @media (max-width: 414.40px) {
+                    width: 100px;
+                    height: 30px;
+                    font-size: 15px;
+                }
+            }
+
+            p {
+                font-size: 20px;
+                color: variables.$text-color;
+
+                @media (max-width: 768px) {
+                    font-size: 16px;
+                }
+
+                @media (max-width: 414.40px) {
+                    font-size: 14px;
+                    font-family: variables.$KOMET;
+                }
+
+                span {
+                    @media (max-width: 768px) {
+                        color: transparent;
+                    }
+
+                    @media (max-width: 414.40px) {
+                        color: variables.$text-color;
+                    }
+                }
+            }
+        }
+
+        .brand {
+
+            img {
+                margin: 5px 0;
+
+                @media (max-width: 768px) {
+                    margin: 15px 0;
+                }
+            }
+        }
+    }
+}

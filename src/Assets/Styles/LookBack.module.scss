@@ -1,0 +1,67 @@
+@use '../Styles/variables';
+
+.container {
+    background-color: variables.$text-color;
+    padding-top: 50px;
+    width: 100%;
+
+    @media (max-width: 768px) {
+        background-size: cover;
+        background-size: 100% 100%;
+    }
+
+    .headers {
+        width: 85%;
+        margin: 0 auto;
+
+        .ourContact {
+            width: 80%;
+
+            img {
+                position: relative;
+                right: 20%;
+                top: 20px;
+            }
+
+            p {
+                font-size: 46px;
+                width: 50%;
+
+                font-family: variables.$FLOOD-STD-WEIGHT-REGULAR;
+
+                @media (max-width: 768px) {
+                    width: 100%;
+                    margin-bottom: 10%;
+                    font-size: 34px;
+                    text-align: center;
+                }
+
+                @media (max-width: 414.40px) {
+                    font-size: 22px;
+                    margin-top: 5%;
+                }
+
+                span {
+                    color: transparent;
+
+                    @media (max-width: 768px) {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .description {
+        // width: 90%;
+        position: relative;
+        align-items: center;
+        overflow-x: scroll;
+        justify-content: space-between;
+        padding: 0 15%;
+  
+        // overflow-x: hidden; /* Hide horizontal scrollbar */
+
+    }
+
+}
