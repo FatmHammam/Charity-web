@@ -20,7 +20,6 @@ function AboutUS() {
             <HeadersOnLight />
             <Team />
             <Investment />
-            <LookBack />
             <Subscribe />
             <Footer />
         </div>
